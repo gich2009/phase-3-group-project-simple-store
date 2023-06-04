@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import HeaderSection from "../HeaderSection";
 
 function ProductSection(){
   return (

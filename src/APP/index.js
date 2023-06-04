@@ -10,12 +10,12 @@ import ProfilePage from "./Pages/ProfilePage";
 function APP(){
   return (
     <Routes>
-      <Route exact path="/"        element={<LandingPage />} />
-      <Route exact path="/signup"  element={<SignupPage />} />
-      <Route exact path="/login"   element={<LoginPage/>} />
-      <Route exact path="/home"    element={<HomePage/>} />
-      <Route exact path="/profile" element={<ProfilePage/>} />
-      <Route path="*"              element={<h1>404 page not found</h1>} />
+      <Route path="/"        element={<LandingPage />} />
+      <Route path="/signup"  element={<SignupPage />} />
+      <Route path="/login"   element={<LoginPage/>} />
+      <Route path="/home"    element={<HomePage/>} />
+      <Route path="/profile/*" element={<ProfilePage/>} />
+      <Route path="*"        element={<h1>404 page not found</h1>} />
     </Routes>
   );
 }
