@@ -1,4 +1,7 @@
-function HeaderSection() {
+import React from "react";
+import "./style.css";
+
+function HeaderSection({ username }) {
   return (
     <header>
       <div className="header-container">
@@ -14,16 +17,22 @@ function HeaderSection() {
         </div>
       </div>
       <div className="content-section">
-        <div className="greeting">
-          <h2>Hi!</h2>
-          <p>Welcome to Simple Store</p>
-        </div>
-        <div className="person-image">
-          <img src="path/to/person-image.png" alt="Person" />
+        <div className="frame">
+          <div className="profile-image-container">
+            <img
+              src="%PUBLIC_URL%/vn_passport.jpg"
+              alt="Passport"
+              className="profile-image"
+            />
+          </div>
+          <div className="welcome-message">
+            <h2>Hi, {username}!</h2>
+            <p>Welcome to Simple Store</p>
+          </div>
         </div>
       </div>
     </header>
   );
-}
-
+};
+    
 export default HeaderSection;
