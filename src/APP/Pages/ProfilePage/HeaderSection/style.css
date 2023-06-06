@@ -1,0 +1,70 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0C3A2D;
+  color: #fff;
+}
+
+.left-section h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right-section ul {
+  display: flex;
+  list-style: none;
+}
+
+.right-section li {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Content section */
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.frame {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  background-color: #0C3A2D;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #0C3A2D;
+  border-radius: 10px;
+  padding: 1rem; 
+}
+
+.profile-image-container {
+  width: 60px;
+  height: 60px;
+  background: url("../../../../../public/vn_passport.jpg");
+  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+
+.greeting {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+.welcome {
+  font-size: 1rem;
+}

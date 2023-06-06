@@ -1,12 +1,17 @@
 import React from "react";
-import HeaderSection from "../HeaderSection";
 
-function ListedItemSection(){
+
+function ListItemSection({ sectionTitle, items }) {
   return (
     <div>
-      <h1>This is the <strong>listed item section</strong> of the profile page</h1>
+      <h2>{sectionTitle}</h2>
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
 
-export default ListedItemSection;
+export default ListItemSection;
