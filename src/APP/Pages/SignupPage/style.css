@@ -30,6 +30,9 @@
   margin-bottom: 10px;
 }
 
+.signup-form p {
+  margin-bottom: 2rem;
+}
 
 .signup-form input[type="text"],
 .signup-form input[type="email"],
