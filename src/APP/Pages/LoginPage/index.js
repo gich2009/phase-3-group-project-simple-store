@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./style.css";
 
 function LoginPage() {
@@ -16,11 +16,12 @@ function LoginPage() {
   function handleCancel(){
     navigate("/");
   }
-
+  
   return (
     <div className="signup-form-container">
       <form onSubmit={handleSubmit} className="signup-form">
-        <h1>Log In</h1>
+        <h1>Welcome Back</h1>
+        <p>Don't have an account? Sign up <Link className="signup-form-link" to="/signup">here</Link></p>
         <label htmlFor="username">Username:</label>
         <input type="text" id="username" value={username} onChange={(event) => setUsername(event.target.value)} required placeholder="Enter username" />
         <label htmlFor="password">Password:</label>
