@@ -21,6 +21,10 @@
   
 }
 
+.signup-form-link {
+  color:white;
+  font-weight: 800;
+}
 
 .signup-form label {
   margin-bottom: 10px;
@@ -50,6 +54,8 @@
   background-color: #ffba00;
   color: #fff;
   cursor: pointer;
+  font-weight: 900;
+  transition-duration: 0.2s;
 }
 
 
