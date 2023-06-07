@@ -1,45 +1,70 @@
 import React, { useState } from "react";
-
+import "./style.css";
+import logo from "./images/SAK1-CTW107.webp";
 
 function ListItemSection({ sectionTitle }) {
   const [selectedItem, setSelectedItem] = useState(null);
-  const items = [
-    { id: 1, name: "Item 1", stock: 10, price: 9.99, image: "item1.jpg" },
-    { id: 2, name: "Item 2", stock: 5, price: 19.99, image: "item2.jpg" },
-    // Add more items as needed
-  ];
+  // const items = [
+  //   { id: 1, name: "sakarias armchair", stock: 10, price: 999, image: "images/SAK1-CTW107.webp" },
+  // ];
 
+  // const handleItemClick = (item) => {
+  //   setSelectedItem(item);
+  // };
 
-  const handleItemClick = (item) => {
-    setSelectedItem(item);
-  };
+  // const handleSellClick = () => {
+  //   if (selectedItem) {
+  //     // Handle the sell button click logic here
+  //     console.log("Sell button clicked for item:", selectedItem);
+  //   }
+  // };
+
+  // const handleRestockClick = () => {
+  //   if (selectedItem) {
+  //     // Handle the restock button click logic here
+  //     console.log("Restock button clicked for item:", selectedItem);
+  //   }
+  // };
+
+  // const handleUpdateClick = () => {
+  //   if (selectedItem) {
+  //     // Handle the update button click logic here
+  //     console.log("Update button clicked for item:", selectedItem);
+  //   }
+  // };
 
   return (
-    <div className="listed-item-section">
-      <h2>{sectionTitle}</h2>
-      <div className="listed-items">
-        {items && items.map((item) => (
-          <div
-            className={`item-card${selectedItem === item ? " active" : ""}`}
-            key={item.id}
-            onClick={() => handleItemClick(item)}
-          >
-            <img src={`/images/${item.image}`} alt={item.name} />
-            <div className="item-info">
-              <h3>{item.name}</h3>
-              <p>Stock: {item.stock}</p>
-              <p>Price: {item.price}</p>
-              <div className="button-card">
-                <button className="sell-button">Sell</button>
-                <button className="restock-button">Restocking</button>
-                <button className="update-button">Update</button>
-              </div>
+    <div className="main-card">
+        <div className="header-section">
+          <div className="left-section">
+            <h2 className="heading">Simple Store</h2>
+          </div>
+          <div className="right-section">
+            <nav className="navbar">
+              <a href="#" className="nav-link">About</a>
+              <a href="#" className="nav-link">Profile</a>
+              <a href="#" className="nav-link">Logout</a>
+            </nav>
+          </div>
+          <div className="user-section">
+            <div className="logo"><img src="" /></div>
+            <div className="username">John Doe</div>
+            <div className="welcome-message">Welcome!</div>
+          </div>
+        </div>
+        <div className="products-section">
+          <h3 className="products-header">Products</h3>
+          <div className="products-container">
+            <div className="product-card">
+              <img src={logo} alt="Product 1" />
+              <h4>Womb Chair</h4>
+              <p>Price: KES 1000</p>
             </div>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
-  );
+    
+ );
 }
 
 export default ListItemSection;

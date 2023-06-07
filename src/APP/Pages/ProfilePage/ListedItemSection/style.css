@@ -1,65 +1,106 @@
-.listed-item-section {
-  margin-bottom: 20px;
-}
-
-.listed-item-section h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.listed-items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.item-card {
-  background-color: #F5F5F5;
+.main-card {
+  margin: 20px;
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.item-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.header-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #0C3A2D;
+  border-radius: 20px;
+  padding: 20px;
+}
+.left-section {
+  flex: 1;
+}
+.heading {
+  color: white;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.username-section {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: -20px;
+  color: white;
+  background-color: #0C3A2D;
+  padding: 20px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.products-section {
+  padding-top: 40px;
+}
+.products-header {
+  text-align: center;
+  color: #0C3A2D;
+}
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 40px;
+}
+.product-card {
+  text-align: center;
+  background-color: #FFC805;
+  border-radius: 5px;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product-card img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 }
-
-.item-info {
+.product-card h4 {
   margin-top: 10px;
 }
-
-.item-info h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
+.product-card p {
+  margin-top: 5px;
+}
+.user-section{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.item-info p {
-  font-size: 14px;
-  color: #888888;
-  margin-bottom: 5px;
-}
 
-.button-card {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
 
-.sell-button,
-.restock-button,
-.update-button {
-  background-color: #F6B76F;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
-.sell-button:hover,
-.restock-button:hover,
-.update-button:hover {
-  opacity: 0.8;
-}
+
+
+
+
+
+
+
+

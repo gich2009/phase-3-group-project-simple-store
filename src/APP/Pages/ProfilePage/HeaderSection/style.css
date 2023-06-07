@@ -46,14 +46,14 @@
 }
 
 .profile-image-container {
-  width: 60px;
-  height: 60px;
-  background: url("../../../../../public/vn_passport.jpg");
+  width: 5px;
+  height: 5px;
+  background: url("../../../../../src/APP/Pages/ProfilePage/HeaderSection/images/vn_passport.jpg");
   background-size: cover;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 .greeting {
