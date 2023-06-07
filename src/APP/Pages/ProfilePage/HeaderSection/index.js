@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
+import icon from "./images/vn_passport.jpg";
 
-function HeaderSection({ username }) {
+
+function HeaderSection({ username = "Fartun" }) {
   return (
     <header>
       <div className="header-container">
@@ -10,9 +13,9 @@ function HeaderSection({ username }) {
         </div>
         <div className="right-section">
           <ul>
-            <li>About</li>
-            <li>Profile</li>
-            <li>Log Out</li>
+            <Link className="header-link" to="/home">Home</Link>
+            <Link className="header-link" to="/profile">Profile</Link>
+            <Link className="header-link" to="/">Logout</Link>
           </ul>
         </div>
       </div>
@@ -20,13 +23,13 @@ function HeaderSection({ username }) {
         <div className="frame">
           <div className="profile-image-container">
             <img
-              src="%PUBLIC_URL%/vn_passport.jpg"
+              src={icon}
               alt="Passport"
               className="profile-image"
             />
           </div>
           <div className="welcome-message">
-            <h2>Hi, {username}!</h2>
+            <h2>Hi, {username} !</h2>
             <p>Welcome to Simple Store</p>
           </div>
         </div>
@@ -34,5 +37,5 @@ function HeaderSection({ username }) {
     </header>
   );
 };
-    
+
 export default HeaderSection;

@@ -48,12 +48,10 @@
 .profile-image-container {
   width: 60px;
   height: 60px;
-  background: url("../../../../../public/vn_passport.jpg");
   background-size: cover;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 100px;
 }
 
 .greeting {
@@ -69,3 +67,17 @@
   font-size: 1rem;
 }
 
+.header-link{
+  color : white;
+  margin-left: 1rem;
+  text-decoration: none;
+
+}
+.header-link:hover{
+text-decoration: underline;
+}
+.profile-image{
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+}
