@@ -48,7 +48,7 @@
 .profile-image-container {
   width: 5px;
   height: 5px;
-  background: url("../../../../../src/APP/Pages/ProfilePage/HeaderSection/images/vn_passport.jpg");
+  /* background: url("../../../../../src/APP/Pages/ProfilePage/HeaderSection/images/vn_passport.jpg"); */
   background-size: cover;
   background-size: contain;
   background-position: center;
