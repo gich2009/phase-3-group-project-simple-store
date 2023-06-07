@@ -10,24 +10,7 @@ function ProductSection() {
   return (
     <>
       <div className="main-card">
-        <div className="header-section">
-          <div className="left-section">
-            <h2 className="heading">Simple Store</h2>
-          </div>
-          <div className="right-section">
-            <nav className="navbar">
-              <a href="#" className="nav-link">About</a>
-              <a href="#" className="nav-link">Profile</a>
-              <a href="#" className="nav-link">Logout</a>
-            </nav>
-          </div>
 
-          <div className="user-section">
-            <div className="logo"><img src={logo} /></div>
-            <div className="username">John Doe</div>
-            <div className="welcome-message">Welcome!</div>
-          </div>
-        </div>
         <div className="products-section">
           <h3 className="products-header">Products</h3>
           <div className="products-container">
