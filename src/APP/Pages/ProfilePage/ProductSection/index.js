@@ -15,9 +15,10 @@ function ProductSection() {
   useEffect(function () {
     async function fetchData() {
       try {
-        const response = await fetch('path/to/your/file.json');
+        const response = await fetch('https://a365-197-156-142-181.ngrok-free.app/stores/1/products');
         const jsonData = await response.json();
         setData(jsonData);
+        console.log(jsonData);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
