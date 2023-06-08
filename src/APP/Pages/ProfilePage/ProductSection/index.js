@@ -6,7 +6,16 @@ import chair1 from './images/chair1.jpeg';
 import chair2 from './images/chair2.jpeg';
 import chair3 from './images/chair3.jpeg';
 import chair4 from './images/chair4.jpeg';
+import { useNavigate } from "react-router-dom";
+
+
+
 function ProductSection() {
+  const navigate = useNavigate();
+
+  function handleListedItem(){
+    navigate("item/1");
+  }
   return (
     <>
       <div className="main-card">
@@ -30,7 +39,7 @@ function ProductSection() {
               <p>Price: KES 800</p>
             </div>
             <div className="product-card">
-              <img src={chair4} alt="Product 4" />
+              <img src={chair4} alt="Product 4" onClick={handleListedItem}/>
               <h4>High chair</h4>
               <p>Price: KES 1200</p>
             </div>

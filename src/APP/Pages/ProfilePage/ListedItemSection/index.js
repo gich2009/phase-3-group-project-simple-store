@@ -10,9 +10,9 @@ function ListItemSection({ sectionTitle }) {
         <img src={logo} alt="Product 1" />
         <h4>Womb Chair</h4>
         <p>Price: KES 1000</p>
-        <p>Price: KES 1000</p>
-        <p>Price: KES 1000</p>
-        <p>Price: KES 1000</p>
+        <p>Stock: 50</p>
+        <p>Sales: 30</p>
+        <p>Profit: KES 20000</p>
       </div>
       <button>Sell</button>
     </>
