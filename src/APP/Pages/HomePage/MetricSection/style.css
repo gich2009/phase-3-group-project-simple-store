@@ -1,0 +1,48 @@
+.metric-section{
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+}
+
+
+.metric-list{
+  align-self: center;
+}
+
+
+.metric {
+  width: 25%;
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+
+.metric > p:first-child {
+  font-size: 3rem;
+  color: #ffc805;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+
+.metric > p:nth-child(2) {
+  letter-spacing: 2px;
+}
+
+
+.metric-section > h1:first-child {
+  align-self: center;
+  font-weight: 905;
+  letter-spacing: 2px;
+  font-size: 2.1rem;
+}
+
+
+.metric-section > h1:nth-child(2){
+  align-self: center;
+  color: grey;
+  font-weight: 500;
+  font-size: 1.6rem;
+}

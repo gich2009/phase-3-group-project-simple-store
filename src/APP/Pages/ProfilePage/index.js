@@ -11,8 +11,8 @@ function ProfilePage(){
       <HeaderSection />
       <Routes> 
         <Route path="/"         element={<StoreSection />} />
-        <Route path="products"  element={<ProductSection />} />
-        <Route path="item/:id"  element={<ListedItemSection />} />
+        <Route path="stores/:id/products"  element={<ProductSection />} />
+        <Route path="stores/:id/products/:id"  element={<ListedItemSection />} />
         <Route path="*"         element={<h1>404 Page not found</h1>} />
       </Routes>
     </div>

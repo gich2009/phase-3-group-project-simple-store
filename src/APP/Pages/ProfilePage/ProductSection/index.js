@@ -1,31 +1,31 @@
 import React from "react";
-import HeaderSection from "../HeaderSection";
 import './style.css';
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-// import logo from './images/logo.png';
-import chair1 from './images/chair1.jpeg';
-import chair2 from './images/chair2.jpeg';
-import chair3 from './images/chair3.jpeg';
-import chair4 from './images/chair4.jpeg';
+import { useNavigate, useParams } from "react-router-dom";
+
 function ProductSection() {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
+  const params = useParams();
 
   useEffect(()=> {
-    fetch('http://localhost:9292/stores/1/products')
+    fetch(`http://localhost:9292/stores/${params.id}/products`)
     .then((response) => response.json())
     .then((data) => setProducts(data));
   }, []);
 
 
-  function handleListedItem(id){
-    navigate(`products/item/${id}`);
+  // function handleListedItem(id){
+  //   navigate(`${id}`, {state : {storeId: params.id}});
+  // }
+
+    function handleListedItem(id) {
+    navigate(`${id}`, { state: { storeId: params.id } });
   }
 
   return (
     <>
-      <div className="main-card">
+      <div className="products-main-card">
         <div className="products-section">
           <h3 className="products-header">Products</h3>
           <div className="products-container">
@@ -36,7 +36,7 @@ function ProductSection() {
                 <p>Selling Price: KES {product.selling_price}</p>
                 <p>Stock: {product.stock}</p>
                 <p>Sales: {product.sales}</p>
-                <p>Store ID: {product.store_id}</p>
+                {/* <p>Store ID: {product.store_id}</p> */}
               </div>
             ))}
           </div>

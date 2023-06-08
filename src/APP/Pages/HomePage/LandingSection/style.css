@@ -1,0 +1,142 @@
+.LandingSection {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  /* left: 1px;
+  top: 11px; */
+  /* background: url("../../../../../public/APP/Pages/HomePage/LandingSection/pexels-anna-shvets-3727469.jpg"); */
+}
+
+.LandingSection > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  margin-left: 10rem;
+}
+
+.Header > h1 {
+  font-size: 3.5rem;
+}
+
+.Header > ul {
+  margin-left: 48rem;
+}
+
+.Header > ul > button {
+  color: #feb900;
+  padding: 18px 15px;
+  border-radius: 15px;
+  width: 120px;
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.Header > ul > button:hover {
+  cursor: pointer;
+}
+
+.Header > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Optional: Creates space between the items */
+  list-style: none; /* Optional: Removes the default list bullet points */
+  align-items: center; 
+}
+
+
+.home-link {
+  color: white;
+  text-decoration: none;
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+/* identical to box height */
+
+/* text-decoration-line: underline; */
+}
+
+.home-link:hover{
+  text-decoration: underline;
+}
+
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Body > div {
+  align-self:center;
+  align-items: center;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column; 
+  /* background-color: red; */
+  /* flex-wrap: wrap; */
+  /* font-size: 2.5rem; */
+  /* font-size: 4rem; */
+}
+
+
+.Body > div > h1 {
+  /* align-self: center;
+  margin-top: 0; */
+  font-size: 4rem;
+}
+
+.Body > div > h1:last-child {
+  margin-top: 0px;
+}
+
+
+.Body > div:nth-child(2) {
+  margin-top: 6.5rem;
+  font-size: 2rem;
+  align-content: center;
+}
+
+.Body > div:nth-child(2) > p {
+  margin-top: 0rem;
+  font-size: 1.8rem;
+  align-content: center;
+  font-weight: 700;
+}
+
+
+
+
+/*
+.Body > h1:first-child {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Body > h1:last-child {
+  margin-top: 0;
+} */
+
+.Body > p {
+  align-self: center;
+  margin-top: 0;
+}
