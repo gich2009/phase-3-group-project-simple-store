@@ -12,6 +12,7 @@
   .column {
     flex: 1;
     margin-right: 20px;
+    background-color: #0C3A2D;
   }
   
   .logo {
@@ -62,4 +63,5 @@
     font-size: 12px;
     margin: 10px;
   }
+  
   
