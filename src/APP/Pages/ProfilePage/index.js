@@ -8,12 +8,9 @@ import { Routes, Route } from "react-router-dom";
 function ProfilePage(){
   return (
     <div className="profile-page">
-      <div>
-        <HeaderSection />
-      </div>
+        {/* <HeaderSection /> */}
       <div>
         <Routes> 
-          {/* <HeaderSection /> */}
           <Route path="/"         element={<StoreSection />} />
           <Route path="products"  element={<ProductSection />} />
           <Route path="products/item/:id"  element={<ListedItemSection />} />
