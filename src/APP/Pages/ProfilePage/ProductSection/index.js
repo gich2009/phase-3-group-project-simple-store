@@ -1,4 +1,6 @@
-import React from "react";
+
+import React, { useState, useEffect } from 'react';
+
 import HeaderSection from "../HeaderSection";
 import './style.css';
 import logo from './images/logo.png';
@@ -6,16 +8,24 @@ import chair1 from './images/chair1.jpeg';
 import chair2 from './images/chair2.jpeg';
 import chair3 from './images/chair3.jpeg';
 import chair4 from './images/chair4.jpeg';
-import { useNavigate } from "react-router-dom";
-
-
-
 function ProductSection() {
-  const navigate = useNavigate();
 
-  function handleListedItem(){
-    navigate("item/1");
-  }
+  const [data, setData] = useState([]);
+
+  useEffect(function () {
+    async function fetchData() {
+      try {
+        const response = await fetch('path/to/your/file.json');
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <div className="main-card">
@@ -39,7 +49,7 @@ function ProductSection() {
               <p>Price: KES 800</p>
             </div>
             <div className="product-card">
-              <img src={chair4} alt="Product 4" onClick={handleListedItem}/>
+              <img src={chair4} alt="Product 4" />
               <h4>High chair</h4>
               <p>Price: KES 1200</p>
             </div>

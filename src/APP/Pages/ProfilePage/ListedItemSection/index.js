@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import logo from "./images/SAK1-CTW107.webp";
 
 function ListItemSection({ sectionTitle }) {
+
+  const [data, setData] = useState([]);
+
+  useEffect(function () {
+    async function fetchData() {
+      try {
+        const response = await fetch('path/to/your/file.json');
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <h3 className="products-header">Listed item</h3>
